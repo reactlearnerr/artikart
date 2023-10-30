@@ -1,0 +1,235 @@
+$breakpoint-tablet: 768px;
+@media (min-width: $breakpoint-tablet) {
+  //desktop
+  .mobile-header {
+    display: none;
+  }
+
+  .desktop-header {
+    display: block;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2em;
+      padding: 1em 3em;
+
+      .logo {
+        font-size: 2em;
+        cursor: pointer;
+      }
+
+      .search-cntr {
+        display: flex;
+        flex: 1;
+
+        .search-input {
+          display: flex;
+          width: 100%;
+        }
+
+        input {
+          width: 100%;
+          height: 3em;
+          border-radius: 8px 0 0 8px;
+          outline: none;
+          border: 0;
+          padding-left: 1rem;
+        }
+
+        .search-icon {
+          width: 3em;
+          padding: 0;
+          color: var(--clr-white);
+          border: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 3em;
+          background: var(--clr-success);
+          border-radius: 0 8px 8px 0;
+          border-color: var(--clr-success);
+        }
+      }
+
+      .profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+
+        .dropdown-icon {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .cart-cntr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        cursor: pointer;
+        position: relative;
+
+        .cart-count {
+          position: absolute;
+          background-color: var(--clr-success);
+          border-radius: 50%;
+          width: 1.25em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          left: 1.5rem;
+          top: -0.25rem;
+        }
+      }
+    }
+  }
+  //categories styles
+  .category-cntr {
+    display: flex;
+    padding: 0.25rem 4rem;
+    align-items: center;
+
+    .category {
+      padding: 1rem;
+      margin-right: 1rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .dropdown-icon {
+      display: flex;
+      padding-left: 0.5rem;
+    }
+  }
+  //banner styles
+  .banner {
+    background-color: var(--clr-gray);
+    position: relative;
+
+    .shop-now-btn {
+      position: absolute;
+      background-color: var(--clr-gray);
+      padding: 1rem 2rem;
+      left: 5rem;
+      bottom: 5rem;
+      border: 0;
+      font-weight: 900;
+      font-size: 1rem;
+    }
+  }
+  //homepage styles
+  .home-container {
+    padding: 3rem 5rem;
+    background-color: var(--clr-gray);
+  }
+}
+@media (max-width: $breakpoint-tablet) {
+  .desktop-header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+
+    .container {
+      font-family: "League Spartan", sans-serif;
+      font-family: "Quicksand", sans-serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+
+      .menu {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 2em !important;
+        font-weight: 400 !important;
+      }
+
+      .profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .cart-cntr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        position: relative;
+
+        .cart-count {
+          position: absolute;
+          background-color: var(--clr-success);
+          border-radius: 50%;
+          width: 1.25em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          left: 1.25rem;
+          top: -0.25rem;
+        }
+      }
+
+      .menu-options {
+        display: flex;
+        align-items: center;
+        gap: 0.75em;
+        justify-content: center;
+      }
+    }
+
+    .search-cntr {
+      display: flex;
+      width: 95%;
+      padding: 0 1em 1em 1em;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+
+      .search-input {
+        display: flex;
+        width: 100%;
+      }
+
+      input {
+        width: 100%;
+        height: 3em;
+        border-radius: 8px 0 0 8px;
+        outline: none;
+        border: 0;
+        padding-left: 1rem;
+      }
+
+      .search-icon {
+        width: 3em;
+        padding: 0;
+        color: var(--clr-white);
+        border: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3em;
+        background: var(--clr-success);
+        border-radius: 0 8px 8px 0;
+        border-color: var(--clr-success);
+      }
+    }
+  }
+}
